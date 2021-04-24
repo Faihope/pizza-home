@@ -3,8 +3,9 @@
 
 <head>
     <link rel="stylesheet" href="css/css/bootstrap.css">
-    <script src="js/script.js"></script>
     <script src="js/js/bootstrap.js"></script>
+    <script src="js/script.js"></script>
+
     <link rel="stylesheet" href="css/style.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -22,7 +23,10 @@
     <div class="nav-background">
         <h1>Welcome to Pizza Home</h1>
         <p>Home away from home!</p>
+        <input type="button" value="View Menu" id="view">
     </div>
+
+  
 
     <div class="container About">
         <div class="row">
@@ -51,7 +55,7 @@
                 <div class="form-group ">
                     <!-- <label for="sel1">select pizza:</label> -->
                     <select name="pizza-select" id="select-pizza" class="form-control my-3">
-                        <option value="Neapolitan Pizza">Select pizza size</option>
+                        <option value="Neapolitan Pizza">Select pizza type</option>
                         <option value="Neapolitan Pizza">Neapolitan Pizza</option>
                         <option value="Chicago Pizza">Chicago Pizza</option>
                         <option value="New York-Style Pizza">New York-Style Pizza</option>
@@ -93,13 +97,21 @@
                     </select>
 
                 </div>
-                <input type="button" value="Order">
+                <input type="button" value="Order" onclick="order()">
 
                 <hr>
                 <table class="table">
                     <thead>
                         <tr>
-                            <th scope="col">Quantity</th>
+                            <th scope="col" >Quantity</th>
+                            <th scope="col">Pizza</th>
+                            <th scope="col">Size</th>
+                            <th scope="col">Crust</th>
+                            <th scope="col">Toppings</th>
+                            <th scope="col">Total</th>
+                        </tr>
+                        <tr>
+                            <th scope="col" id="quant" ></th>
                             <th scope="col">Pizza</th>
                             <th scope="col">Size</th>
                             <th scope="col">Crust</th>
