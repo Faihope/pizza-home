@@ -31,7 +31,7 @@ a:hover {
 .About {
     margin-top: 2%;
     padding-top: 2%;
-    background-color: burlywood;
+    background-color: antiquewhite;
     height: 700px;
     text-align: center;
 }
@@ -46,4 +46,7 @@ a:hover {
 }
 .column{
     margin:10px auto;
+}
+.form-control my-3{
+    width: 20%;
 }
