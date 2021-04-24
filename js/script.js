@@ -49,6 +49,10 @@ function order() {
     total();
 
 
+
+}
+function finalOrder(){
+    delivery();
 }
 
 function total() {
@@ -57,6 +61,7 @@ function total() {
     var quantity = document.getElementById("quantity").value;
     var crust = document.getElementById("select-pizza-crust").value;
     var size = document.getElementById("select-pizza-size").value;
+    // var newSize=document.getElementById("newSize").name;
     var total = (parseInt(topping) + parseInt(crust) + parseInt(size)) * quantity;
     document.getElementById("pizzatype").innerHTML = type;
     document.getElementById("quant").innerHTML = quantity;
@@ -67,10 +72,22 @@ function total() {
 
 
 
-
-    // alert(total);
     return total;
 
 
 
+}
+
+function delivery(){
+    var delivered=document.getElementById("delivery-selection").value;
+    if(delivered){
+        if (delivered=="no-delivery"){
+            alert("Thank you for shopping with Pizza Home")
+
+        }
+        else{
+           var location= prompt("Please Enter your Location");
+            alert("Your pizza will be delivered in " + location);
+        }
+    }
 }
