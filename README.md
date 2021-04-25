@@ -1,8 +1,8 @@
-# DELANI STUDIO
+# Pizza Home
 ## Author
 Faith Chepngetich.
 ## Description
-Its a website that describes more details about Delani studio that is its services,portfolio contact information and social media handles. 
+Its a website that allows user to order pizza online and calculates the total charges. 
 ### Prerequisites
 You need to have git installed
 You can install it with the following command in your terminal
@@ -10,7 +10,7 @@ You can install it with the following command in your terminal
 ### Setup
 To access this project on your local files, you can clone it using these steps
 Open your terminal
-Use this command to clone `$ git clone https://github.com/Faihope/Delani_studio`
+Use this command to clone `$ git clone https://github.com/Faihope/pizza-home`
  This will clone the repositoty into your local folder
  __Enjoy :)__
 ### Technologies Used
@@ -18,12 +18,13 @@ Use this command to clone `$ git clone https://github.com/Faihope/Delani_studio`
 CSS
 JavaScript and jQuey
 Git
+Bootstrap
 ### Live Site
 View [live](https://faihope.github.io/Delani_studio/)
-### Licence
-This project is under the  [MIT](LICENSE) licence
+### License
+This project is under the  [MIT](license) licence
 License format:
-MIT License
+###MIT license
 Copyright (c) 2021 (Faith Chepngetich.)
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
