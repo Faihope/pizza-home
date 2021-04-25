@@ -1,17 +1,4 @@
 
-
-$(document).ready(function () {
-
-    
-
-
-});
-
-
-
-
-
-
 function order() {
     total();
     validateQuantity()
@@ -27,7 +14,7 @@ function total() {
     var type = document.getElementById("select-pizza").value;
     var topping = document.getElementById("select-pizza-toppings").value;
     var topping1 = document.getElementById("select-pizza-toppings");
-    
+
     var quantity = document.getElementById("quantity").value;
     var crust = document.getElementById("select-pizza-crust").value;
     var crust1 = document.getElementById("select-pizza-crust");
@@ -36,7 +23,7 @@ function total() {
     var size1 = document.getElementById("select-pizza-size");
     var size2 = size1.options[size1.selectedIndex].text;
     var topping2 = topping1.options[topping1.selectedIndex].text;
-    // var newSize=document.getElementById("newSize").value;
+
     var total = (parseInt(topping) + parseInt(crust) + parseInt(size)) * quantity;
     document.getElementById("pizzatype").innerHTML = type;
     document.getElementById("quant").innerHTML = quantity;
@@ -45,10 +32,7 @@ function total() {
     document.getElementById("ptopping").innerHTML = topping2;
     document.getElementById("ptotal").innerHTML = total;
     return total;
-    // var e = document.getElementById("elementId");
-    // var value = e.options[e.selectedIndex].value;
-    // var text = e.options[e.selectedIndex].text;
-    //   
+
 
 
 }
