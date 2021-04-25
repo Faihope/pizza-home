@@ -2,7 +2,7 @@
 ## Author
 Faith Chepngetich.
 ## Description
-Its a website that allows user to order pizza online and calculates the total charges. 
+Its a website that allows users to order pizza online and calculates the total charges. 
 ### Prerequisites
 You need to have git installed
 You can install it with the following command in your terminal
