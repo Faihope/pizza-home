@@ -2,9 +2,7 @@
 
 $(document).ready(function () {
 
-    $(".About").mouseenter(function () {
-
-    })
+    
 
 
 });
