@@ -1,5 +1,5 @@
 * {
-    box-sizing: border-box;
+    box-sizing: content-box;
 }
 
 nav {
@@ -37,6 +37,10 @@ a:hover {
     text-align: center;
     /* display: none; */
 }
+#menu{
+    text-align: center;
+    margin-top: 2%;
+}
 
 .order {
     text-align: center;
@@ -66,4 +70,7 @@ footer {
     padding: 4%;
     text-align: center;
     margin: 10px auto;
+}
+#greek{
+    
 }
