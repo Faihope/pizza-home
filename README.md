@@ -20,6 +20,6 @@ JavaScript and jQuey
 Git
 Bootstrap
 ### Live Site
-View [live](https://faihope.github.io/Delani_studio/)
+View [live](https://faihope.github.io/pizza-home//)
 ### License
 This project is under the  [MIT](license) licence
