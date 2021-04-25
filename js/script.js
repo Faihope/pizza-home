@@ -3,7 +3,7 @@
 $(document).ready(function () {
 
     $("#view").mouseenter(function () {
-        // $(".About").show();
+        $(".About").show();
         alert("hello")
     })
 
@@ -14,39 +14,9 @@ $(document).ready(function () {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 function order() {
     total();
+    validateQuantity()
 
 
 
@@ -61,7 +31,7 @@ function total() {
     var quantity = document.getElementById("quantity").value;
     var crust = document.getElementById("select-pizza-crust").value;
     var size = document.getElementById("select-pizza-size").value;
-    // var newSize=document.getElementById("newSize").name;
+    // var newSize=document.getElementById("newSize").value;
     var total = (parseInt(topping) + parseInt(crust) + parseInt(size)) * quantity;
     document.getElementById("pizzatype").innerHTML = type;
     document.getElementById("quant").innerHTML = quantity;
@@ -87,7 +57,19 @@ function delivery(){
         }
         else{
            var location= prompt("Please Enter your Location");
-            alert("Your pizza will be delivered in " + location);
+            alert("Your pizza will be delivered in " + location  + " with an extra cost of ksh 200.");
         }
+    }
+}
+
+function validateQuantity(){
+    var quantity = document.getElementById("quantity").value;
+    if(quantity)
+    if(quantity < 0 || ""){
+        alert("please enter a positive number");
+        return false;
+    }
+    else{
+        return true;
     }
 }

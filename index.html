@@ -23,7 +23,7 @@
     <div class="nav-background">
         <h1>Welcome to Pizza Home</h1>
         <p>Home away from home!</p>
-        <input type="button" value="View Menu" id="view">
+      
     </div>
 
   
@@ -55,7 +55,7 @@
                 <div class="form-group ">
                     <!-- <label for="sel1">select pizza:</label> -->
                     <select name="pizza-select" id="select-pizza" class="form-control my-3">
-                        <option value="Neapolitan Pizza">Select pizza type</option>
+                        <option value="">Select pizza type</option>
                         <option value="Neapolitan Pizza">Neapolitan Pizza</option>
                         <option value="Chicago Pizza">Chicago Pizza</option>
                         <option value="New York-Style Pizza">New York-Style Pizza</option>
@@ -79,7 +79,7 @@
                 <div class="column">
                     <!-- <label for="size">select pizza crust:</label> -->
                     <select name="pizza-crust" id="select-pizza-crust" class="form-control my-3">
-                        <option value="">select pizza crust</option>
+                        <option value=""></option>
                         <option value="400">Gluten Free</option>
                         <option value="300">Stuffed</option>
                         <option value="500">Crispy</option>
@@ -97,7 +97,7 @@
                     </select>
 
                 </div>
-                <input type="button" value="Order" onclick="order()">
+                <input type="button" value="Order" onclick="return order()">
 
                 <hr>
                 <table class="table">
@@ -110,29 +110,31 @@
                             <th scope="col">Toppings</th>
                             <th scope="col">Total</th>
                         </tr>
-                        <tr>
-                            <th scope="col" id="quant" ></th>
-                            <th scope="col" id="pizzatype"></th>
-                            <th scope="col" id="psize"></th>
-                            <th scope="col" id="pcrust"></th>
-                            <th scope="col" id="ptopping"> </th>
-                            <th scope="col" id="ptotal"></th>
-                        </tr>
+
                     </thead>
-                    <tbody></tbody>
+                    <tbody>
+                        <tr>
+                            <td scope="col" id="quant" ></td>
+                            <td scope="col" id="pizzatype"></td>
+                            <td scope="col" id="psize"></td>
+                            <td scope="col" id="pcrust"></td>
+                            <td scope="col" id="ptopping"> </td>
+                            <td scope="col" id="ptotal"></td>
+                        </tr>
+                    </tbody>
                 </table>
                 <select name="delivery-selection" id="delivery-selection" class="form-control">
-                    <option value="no-delivery">Need delivery</option>
-                    <option value="delivery">Picked</option>
+                    <option value="delivery">Need delivery</option>
+                    <option value="no-delivery">Picked</option>
                 </select>
 
-                
+                <input type="submit" class="btn btn-success" value="Finalize Order" onclick="delivery()" id="final"/>
+
             </div>
 
         </div>
 
-        <input type="submit" class="btn btn-success" value="Finalize Order" onclick="delivery()" id="final"/>
-
+        
     </div>
     <footer>
        <img src="images/images/twitter (1).png" alt="no pic">

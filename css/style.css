@@ -21,7 +21,7 @@ a:hover {
 .nav-background {
     background-image: url("../images/images/brett-jordan-kJw28zGOxoE-unsplash.jpg");
     width: 100%;
-    height: 600px;
+    height: 400px;
     background-size: cover;
     text-align: center;
     color: yellow;
@@ -35,7 +35,7 @@ a:hover {
     background-color: antiquewhite;
     height: 700px;
     text-align: center;
-    display: none;
+    /* display: none; */
 }
 
 .order {
@@ -48,7 +48,8 @@ a:hover {
 }
 
 #final {
-    padding-top: 0px;
+    margin-top: 0px auto;
+    margin-bottom: 5%;
 }
 
 .column {
