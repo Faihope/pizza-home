@@ -31,6 +31,42 @@ function total() {
     document.getElementById("pcrust").innerHTML = crust2;
     document.getElementById("ptopping").innerHTML = topping2;
     document.getElementById("ptotal").innerHTML = total;
+
+if(type==""){
+    alert("Please select pizza type")
+}
+else{
+    return false;
+}
+if(topping==""){
+    alert("Please select pizza topping")
+}
+else{
+    return true;
+}
+if(quantity==""){
+    alert("Please select pizza quantity")
+}
+else{
+    return true;
+}
+if(crust==""){
+    alert("Please select pizza crust")
+}
+else{
+    return true;
+}
+if(size==""){
+    alert("Please select pizza size")
+}
+else{
+    return true;
+}
+
+
+
+
+
     return total;
 
 
