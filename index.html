@@ -45,109 +45,155 @@
                 <img src="images/images/deepal-tamang-q23Yo4LW9NQ-unsplash.jpg" alt="no image" width="30%">
             </div>
         </div>
-    </div>
 
-    <div class="container order">
-        <h1>Order </h1>
-        <div class="row">
-            <div class="column">
+        <div class="container prices">
+            <div class="row">
+                <p>Here are our menu prices:</p>
+                <div class="col-md-3">
 
-
-                <div class="form-group ">
-                    <!-- <label for="sel1">select pizza:</label> -->
-                    <select name="pizza-select" id="select-pizza" class="form-control my-3">
-                        <option value="">Select pizza type</option>
-                        <option value="Neapolitan Pizza">Neapolitan Pizza</option>
-                        <option value="Chicago Pizza">Chicago Pizza</option>
-                        <option value="New York-Style Pizza">New York-Style Pizza</option>
-                        <option value="Sicilian Pizza">Sicilian Pizza</option>
-                        <option value="Greek Pizza">Greek Pizza</option>
-                    </select>
+                    <h6>Size of pizza</h6>
+                    <ol>
+                        <li>Small @ ksh 700. </li>
+                        <li>Medium @ ksh 1000. </li>
+                        <li>Large @ ksh 1200. </li>
+                    </ol>
                 </div>
+                <div class="col-md-3">
+                    <h6>Topping prices</h6>
+                    <ol>
+                        <li>Gluten Free @ ksh 400. </li>
+                        <li>Stuffed @ ksh 300. </li>
+                        <li>Crispy @ ksh 500. </li>
 
+                    </ol>
+                </div>
+                <div class="col-md-3">
+                    <h6>Crust prices</h6>
+                    <ol>
+                        <li>Extra Cheese @ ksh 200. </li>
+                        <li>onions @ ksh 250. </li>
+                        <li>Sausage @ ksh 250. </li>
+                        <li>Bacon @ ksh 250. </li>
+
+                    </ol>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container order">
+            <h1>Order </h1>
+            <div class="row">
                 <div class="column">
-                    <!-- <label for="size">select pizza size:</label> -->
-                    <select name="pizza-size" id="select-pizza-size" class="form-control my-3">
-                        <option value="">Select pizza size</option>
-                        <option value="700" id="small">Small</option>
-                        <option value="1000">Medium</option>
-                        <option value="1200">Large</option>
+
+
+                    <div class="form-group ">
+                        <!-- <label for="sel1">select pizza:</label> -->
+                        <select name="pizza-select" id="select-pizza" class="form-control my-3">
+                            <option value="">Select pizza type</option>
+                            <option value="Neapolitan Pizza">Neapolitan Pizza</option>
+                            <option value="Chicago Pizza">Chicago Pizza</option>
+                            <option value="New York-Style Pizza">New York-Style Pizza</option>
+                            <option value="Sicilian Pizza">Sicilian Pizza</option>
+                            <option value="Greek Pizza">Greek Pizza</option>
+                        </select>
+                    </div>
+
+                    <div class="column">
+                        <!-- <label for="size">select pizza size:</label> -->
+                        <select name="pizza-size" id="select-pizza-size" class="form-control my-3">
+                            <option value="">Select pizza size</option>
+                            <option value="700" id="small">Small</option>
+                            <option value="1000">Medium</option>
+                            <option value="1200">Large</option>
+                        </select>
+                    </div>
+                    <div class="column">
+                        <input type="number" class="form-control my-3" placeholder="Select Quantity" id="quantity" />
+                    </div>
+                    <div class="column">
+                        <!-- <label for="size">select pizza crust:</label> -->
+                        <select name="pizza-crust" id="select-pizza-crust" class="form-control my-3">
+                            <option value="">Select crust</option>
+                            <option value="400">Gluten Free</option>
+                            <option value="300">Stuffed</option>
+                            <option value="500">Crispy</option>
+                        </select>
+                    </div>
+                    <div class="column">
+                        <!-- <label for="size">select pizza toppings:</label> -->
+                        <select name="pizza-toppings" id="select-pizza-toppings" class="form-control my-3">
+                            <option value="">select pizza toppings</option>
+                            <option value="250">onions</option>
+                            <option value="200">Extra Cheese</option>
+                            <option value="200">Sausage</option>
+                            <option value="250">Bacon</option>
+
+                        </select>
+
+                    </div>
+                    <input type="button" value="Order" onclick="return order()">
+
+                    <hr>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Quantity</th>
+                                <th scope="col">Pizza Type</th>
+                                <th scope="col">Size</th>
+                                <th scope="col">Crust</th>
+                                <th scope="col">Toppings</th>
+                                <th scope="col">Total</th>
+                            </tr>
+
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td scope="col" id="quant"></td>
+                                <td scope="col" id="pizzatype"></td>
+                                <td scope="col" id="psize"></td>
+                                <td scope="col" id="pcrust"></td>
+                                <td scope="col" id="ptopping"> </td>
+                                <!-- <td scope="col" id="ptotal"></td> -->
+                            </tr>
+                            <tr>
+                                <td scope="col" id="quantp"></td>
+                                <td scope="col" id="pizzatypep"></td>
+                                <td scope="col" id="psizep"></td>
+                                <td scope="col" id="pcrustp"></td>
+                                <td scope="col" id="ptoppingp"> </td>
+                                <td scope="col" id="ptotalp"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <input type="button" value="Order-again" onclick="reset();">
+
+                    <select name="delivery-selection" id="delivery-selection" class="form-control">
+                        <option value="delivery">Need delivery</option>
+                        <option value="no-delivery">Picked</option>
                     </select>
-                </div>
-                <div class="column">
-                    <input type="number" class="form-control my-3" placeholder="Select Quantity" id="quantity" />
-                </div>
-                <div class="column">
-                    <!-- <label for="size">select pizza crust:</label> -->
-                    <select name="pizza-crust" id="select-pizza-crust" class="form-control my-3">
-                        <option value="">Select crust</option>
-                        <option value="400">Gluten Free</option>
-                        <option value="300">Stuffed</option>
-                        <option value="500">Crispy</option>
-                    </select>
-                </div>
-                <div class="column">
-                    <!-- <label for="size">select pizza toppings:</label> -->
-                    <select name="pizza-toppings" id="select-pizza-toppings" class="form-control my-3">
-                        <option value="">select pizza toppings</option>
-                        <option value="250">onions</option>
-                        <option value="200">Extra Cheese</option>
-                        <option value="200">Sausage</option>
-                        <option value="250">Bacon</option>
 
-                    </select>
+                    <input type="submit" class="btn btn-success" value="Finalize Order" onclick="delivery()"
+                        id="final" />
 
                 </div>
-                <input type="button" value="Order" onclick="return order()">
-
-                <hr>
-                <table class="table">
-                    <thead>
-                        <tr>
-                            <th scope="col">Quantity</th>
-                            <th scope="col">Pizza Type</th>
-                            <th scope="col">Size</th>
-                            <th scope="col">Crust</th>
-                            <th scope="col">Toppings</th>
-                            <th scope="col">Total</th>
-                        </tr>
-
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td scope="col" id="quant"></td>
-                            <td scope="col" id="pizzatype"></td>
-                            <td scope="col" id="psize"></td>
-                            <td scope="col" id="pcrust"></td>
-                            <td scope="col" id="ptopping"> </td>
-                            <td scope="col" id="ptotal"></td>
-                        </tr>
-                    </tbody>
-                </table>
-                <select name="delivery-selection" id="delivery-selection" class="form-control">
-                    <option value="delivery">Need delivery</option>
-                    <option value="no-delivery">Picked</option>
-                </select>
-
-                <input type="submit" class="btn btn-success" value="Finalize Order" onclick="delivery()" id="final" />
 
             </div>
 
+
         </div>
+        <footer>
+            <h4 id="follow">Follow us on:</h4>
+            <img src="images/images/twitter (1).png" alt="no pic">
+            <img src="images/images/skype.png" alt="no pic">
+            <img src="images/images/you_tube.png" alt="no pic">
+            <img src="images/images/facebook (1).png" alt="no pic">
+            <img src="images/images/flickr.png" alt="no pic">
+            <p id="copyright">Pizza Home @ 2021</p>
 
 
-    </div>
-    <footer>
-        <h4 id="follow">Follow us on:</h4>
-        <img src="images/images/twitter (1).png" alt="no pic">
-        <img src="images/images/skype.png" alt="no pic">
-        <img src="images/images/you_tube.png" alt="no pic">
-        <img src="images/images/facebook (1).png" alt="no pic">
-        <img src="images/images/flickr.png" alt="no pic">
-        <p id="copyright">Pizza Home @ 2021</p>
-
-
-    </footer>
+        </footer>
 
 
 </body>

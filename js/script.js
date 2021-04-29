@@ -30,38 +30,43 @@ function total() {
     document.getElementById("psize").innerHTML = size2;
     document.getElementById("pcrust").innerHTML = crust2;
     document.getElementById("ptopping").innerHTML = topping2;
-    document.getElementById("ptotal").innerHTML = total;
+    // document.getElementById("ptotal").innerHTML = total;
+    document.getElementById("ptotalp").innerHTML = total;
+    document.getElementById("ptoppingp").innerHTML = topping;
+    document.getElementById("psizep").innerHTML = size;
+    document.getElementById("pcrustp").innerHTML = crust;
 
-if(type==""){
-    alert("Please select pizza type")
-}
-else{
-    return false;
-}
-if(topping==""){
-    alert("Please select pizza topping")
-}
-else{
-    return true;
-}
-if(quantity==""){
-    alert("Please select pizza quantity")
-}
-else{
-    return true;
-}
-if(crust==""){
-    alert("Please select pizza crust")
-}
-else{
-    return true;
-}
-if(size==""){
-    alert("Please select pizza size")
-}
-else{
-    return true;
-}
+
+    if (type == "") {
+        alert("Please select pizza type")
+    }
+    else {
+        return false;
+    }
+    if (topping == "") {
+        alert("Please select pizza topping")
+    }
+    else {
+        return true;
+    }
+    if (quantity == "") {
+        alert("Please select pizza quantity")
+    }
+    else {
+        return true;
+    }
+    if (crust == "") {
+        alert("Please select pizza crust")
+    }
+    else {
+        return true;
+    }
+    if (size == "") {
+        alert("Please select pizza size")
+    }
+    else {
+        return true;
+    }
 
 
 
@@ -72,6 +77,13 @@ else{
 
 
 }
+function reset() {
+    location.reload();
+
+}
+// function reset(){
+//     document.getElementById("Order-again").innerHTML=
+// }
 
 
 
